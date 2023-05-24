@@ -5,16 +5,21 @@ h1{
     border: dashed rgb(68, 22, 84);
 }
 h2{
-    background: linear-gradient(0.25turn, white,#52b6ca);
-}
-
-ul{
-    background-color: rgb(179, 238, 212);
-    width: 300px;
-}
-h3{
     border: solid #7fff00; 
     width: 400px; 
     background-color: rgb(218, 244, 224);
 }
 
+ul{
+    background-color: rgb(165, 216, 248);
+    width: 300px;
+}
+h3{
+    background: linear-gradient(0.5turn, white, #c9faef);
+    color: rgb(75, 58, 8);
+
+}
+div#aaaaaaa > div {
+	padding: 5px;
+	background-color: #c9faef;
+}
