@@ -41,18 +41,27 @@ div.insertAdjacentElement('beforeend',p3);
 
 
 // 練習4-4 箇条書き削除プログラム
-let w = document.querySelectorAll('li');
-for (let n of w) {
-    n.remove();
+let w; 
+for (let i = 0; i < 3; i = i+ 1) {
+	w = document.querySelector('li');
+    w.remove();
 }
 
 // 練習4-5 箇条書き追加プログラム
-let aaa = document.querySelector('ul#location'); 
-//let ns = document.createElement();
-    /*for (let b = 0; b < data.length;b++){
+/*let aaa = document.querySelector('ul#location'); 
+let ns = document.createElement();
+    for (let b = 0; b < data.length;b++){
 	let lib= document.createElement('li');
-	aaa.insertAdjacentElement('beforeend', lib);
-	lib.textContent = (data[b][]);
-	    /*for (let B = 0; B < data[b].length;B++){	
+	b.insertAdjacentElement('beforeend', lib);
+        for (let B = 0; B < data[b].length;B++){
+			aaa.textContent = (data[b][B]);	
 	    }
     }*/
+	let li;
+	let ul = document.querySelector('ul#location');
+	for (let n of data){
+		li = document.createComment('li');
+		ul.insertAdjacentElement('beforeend',li);  
+		li.textContent =n.name + "・・・緯度："+n.lat+"，経度："+n.lng;
+	}
+
