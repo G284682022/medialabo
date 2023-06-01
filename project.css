@@ -1,3 +1,26 @@
 p {
     color: blue;
 }
+
+h1{ 
+    font-family: Arial;
+    font-size: 3.4rem;
+    text-align: center;
+    color: rgb(7, 7, 6);
+
+}
+h2#f2{
+    color: blue;
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: center;
+}
+h2#f1{
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: center;
+    font-size: 60px;
+
+}
+
+

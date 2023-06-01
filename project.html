@@ -5,14 +5,45 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>project</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.27.2/axios.min.js"></script>
+
     <link rel="stylesheet" href="project.css">
     <script src=" weather.js" defer></script>
 </head>
+<script type="text/javascript">
+    document.bgColor ;
+</script>
 <body>
-    <input type="text"name="shimei" id="shimei"size="20" > 
-    <button id="検索">検索</button>
-    <p>天気</p>
-    <p>晴れ</p>
-    
+    <label for="santaro">都市一覧＞</label>
+    <select name="santaro" id="santaro">
+        <option value="">Cairo カイロ （エジプト）</option>
+        <option value="momo">Moscow モスクワ （ロシア）</option>
+        <option value="kin">Johannesburg ヨハネスブルク （南アフリカ）</option>
+        <option value="urashima">Beijing 北京 （中華人民共和国）</option>
+        <option value="urashima"> Tokyo 東京 （日本） </option>
+        <option value="urashima"> Singapore シンガポール</option>
+        <option value="urashima"> Sydney シドニー (オーストラリア)</option>
+        <option value="urashima"> London ロンドン （イギリス）</option>
+        <option value="urashima"> Paris パリ （フランス）</option>
+        <option value="urashima"> Rio de Janeiro リオデジャネイロ （ブラジル）</option>
+        <option value="urashima"> New York ニューヨーク （アメリカ合衆国） </option>
+        <option value="urashima"> Los Angeles ロサンゼルス （アメリカ合衆国）</option>
+    </select>
+    <button id="kensaku">検索</button>
+
+    <h1></h1>
+    <div id="表示">
+
+
+    </div>
+    <h1 id="asas">
+    </h1>
+
+
+    <h2 id = "f1"></h2>
+    <h2 id = "f2"></h2>
+    <h2 id = "f3"></h2>
+    <h2 id = "f4"></h2>
+    <h2 id = "f5"></h2>
 </body>
 </html>
