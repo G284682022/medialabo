@@ -115,22 +115,11 @@ function showResult(resp) {
     console.log('都市名'+data.name);
 
     if (data.weather[0].main == "Clouds"){
-  //-------------------------------------------
-  //for (let o = 0; o < 28; o = o + 1){
     let img = document.createElement('img');
     img.setAttribute('src', "cloudy.png");
     img.setAttribute('width', '100');
     let d = document.querySelector('g1#h1');
     d.insertAdjacentElement('afterend', img);
-
-
-   // w = document.querySelector('h1#uuu');
-    //w.remove();
-//}
-
-
-
-
 } else if (data.weather[0].main == "Clear"){
   let img = document.createElement('img');
   img.setAttribute('src', "illustrain08_weather04.png");
