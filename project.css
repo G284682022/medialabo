@@ -1,5 +1,7 @@
-p {
-    color: blue;
+p1 {
+    text-shadow: rgb(235, 255, 19) 1px 0 10px;
+	color: rgb(32, 29, 30);
+ 
 }
 
 h1{ 
@@ -7,13 +9,13 @@ h1{
     font-size: 3.4rem;
     text-align: center;
     color: rgb(7, 7, 6);
-
+    text-shadow: rgb(165, 195, 211) 1px 0 10px;
 }
 h2#f2{
-    color: blue;
     font-family: Arial;
     font-weight: lighter;
     text-align: center;
+    font-size: 30px;
 }
 h2#f1{
     font-family: Arial;
@@ -22,5 +24,25 @@ h2#f1{
     font-size: 60px;
 
 }
+div#表示{
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: center;
+    font-size:60px;
 
+    background-color: rgb(179, 238, 212);
+    border: dashed rgb(13, 120, 234);
+}
+
+div.ggg {
+    display: grid;                      /* グリッドレイアウトにする*/
+    grid-template-columns: 1fr 1fr 1fr; /* 3列にする．幅は 1:2:2 の比率*/
+    grid-auto-rows: 100px 100px;        /* 高さは 100px */
+    grid-gap: 50px;                     /* 隣り合う行（列）の間隔を 10px に*/
+    width: 1420px;
+    font-family: Arial;
+    font-weight: lighter;
+    text-align: center;
+ 
+}
 
