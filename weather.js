@@ -55,14 +55,24 @@ let hairetu = [360630,524901,993800,1816670,1850147,1880252,2147714,2643743,2968
 let b = document.querySelector('#kensaku');
 b.addEventListener('click', sendRequest);
 
+   let j = 0;
+
+   let e =0;
 
 // 通信を開始する処理
 function sendRequest() {
 
-    let w = document.querySelector('div#表示');
-    w.style.display ="none";  
-    //let t = document.querySelector('g1#h1');
-    //t.remove();
+    /*let w = document.querySelector('div#表示');
+    w.style.display ="none"; */ 
+    if (j == 0){
+      w = document.querySelector('div#表示');
+      w.remove(); 
+      j = j + 1; 
+    }
+
+    console.log(j);
+   
+
 
   let s = document.querySelector('select#santaro');
   let idx = s.selectedIndex; 
@@ -114,33 +124,55 @@ function showResult(resp) {
     // data をコンソールに出力
     console.log('都市名'+data.name);
 
+
+
+
+
+    //--------------------------------------------------------
+
+
+
+    if (e == 1){
+      let n1;
+      for (let lb = 0; lb < 14; lb ++){
+     // n1 = document.querySelector('img');
+    //n1.style.display ="none"; 
+    n1 = document.querySelector('img');
+    n1.remove(); 
+      }
+    e = 0;
+    }
+    if (e == 0){
+      for (let la = 0; la < 14; la ++){
     if (data.weather[0].main == "Clouds"){
     let img = document.createElement('img');
     img.setAttribute('src', "cloudy.png");
     img.setAttribute('width', '100');
-    let d = document.querySelector('g1#h1');
+    let d = document.querySelector('h2#f2');
     d.insertAdjacentElement('afterend', img);
 } else if (data.weather[0].main == "Clear"){
   let img = document.createElement('img');
   img.setAttribute('src', "illustrain08_weather04.png");
   img.setAttribute('width', '100');
-  let d = document.querySelector('g1#h1');
+  let d = document.querySelector('h2#f2');
   d.insertAdjacentElement('afterend', img);
 }else if (data.weather[0].main == "Rain"){
   let img = document.createElement('img');
   img.setAttribute('src', "weather_parasol_rain_illust_1087.png");
   img.setAttribute('width', '100');
-  let d = document.querySelector('g1#h1');
+  let d = document.querySelector('h2#f2');
   d.insertAdjacentElement('afterend', img);
 }else{
   let img = document.createElement('img');
   img.setAttribute('src', "yama_kiri.png");
   img.setAttribute('width', '100');
-  let d = document.querySelector('g1#h1');
+  let d = document.querySelector('h2#f2');
   d.insertAdjacentElement('afterend', img);
 }
- 
-
+}
+e = e + 1;
+}
+//-------------------------------------------------------------------
 
     let ee = document.querySelector('h1#asas');
     ee.textContent = (data.name);
