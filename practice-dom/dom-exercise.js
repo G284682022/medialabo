@@ -57,11 +57,12 @@ let ns = document.createElement();
 			aaa.textContent = (data[b][B]);	
 	    }
     }*/
-	let li;
+
 	let ul = document.querySelector('ul#location');
+	let dd;
 	for (let n of data){
-		li = document.createComment('li');
-		ul.insertAdjacentElement('beforeend',li);  
-		li.textContent =n.name + "・・・緯度："+n.lat+"，経度："+n.lng;
+		dd = document.createElement('li');
+		ul.insertAdjacentElement('beforeend',dd);  
+		dd.textContent =n.name + "・・・緯度："+n.lat+"，経度："+n.lng;
 	}
 
