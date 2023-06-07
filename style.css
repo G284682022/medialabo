@@ -1,8 +1,8 @@
 h1{
     text-shadow: rgb(6, 160, 243) 1px 0 10px;
 	color: rgb(174, 20, 151);
-    background-color: rgb(179, 238, 212);
-    border: dashed rgb(68, 22, 84);
+    background-color: rgb(142, 215, 136);
+    border: dashed rgb(126, 76, 143);
 }
 h2{
     border: solid #7fff00; 
@@ -34,4 +34,9 @@ aaa{
 }
 Pl{
 	background-color: #f7c9fa;
+}
+
+
+body {
+    background-color: #b4e8d2;
 }
